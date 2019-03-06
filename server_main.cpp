@@ -16,7 +16,7 @@ int main()
     int ret = 0;
 
     try {
-        int port = 22222;
+        int port = 12000;
         UDPServer server(port);
 
         DebugLog("Local IP Address:");

@@ -14,11 +14,11 @@ int main()
     int ret = 0;
 
     try {
-        UDPClient client("127.0.0.1", 22222);
+        UDPClient client("255.255.255.255", 16735);
        
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 1; i++) {
             // 送信
-            client.Send("Hello");
+            client.Send("KEYPRESSES:113");
             
             // 受信
             std::string ret = client.ReceiveString();

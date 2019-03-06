@@ -33,11 +33,20 @@ UDPClient::UDPClient(const std::string& hostname_, int port_)
     port = port_;
     isClosed = true;
     
+    
     // ソケットの生成
     sock = socket(AF_INET, SOCK_DGRAM, 0);
     if (sock == -1) {
         throw std::runtime_error("Failed to create a UDP socket for sending.");
     }
+    //------以下为设置UDP开启广播发消息格式-------
+    int broadcast = 1;
+    if (setsockopt(sock, SOL_SOCKET, SO_BROADCAST, &broadcast,sizeof broadcast) == -1) {
+        perror("setsockopt (SO_BROADCAST)");
+        exit(1);
+    }
+    //------设置UDP广播发消息方式到这里结束-------
+    
     
     // ホスト名の解決
     memset(&serverAddr, 0, sizeof(serverAddr));

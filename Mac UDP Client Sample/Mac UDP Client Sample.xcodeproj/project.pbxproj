@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0461B01EF50DA100E89CD6 /* client_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461AD1EF50DA100E89CD6 /* client_main.cpp */; };
-		8E0461B11EF50DA100E89CD6 /* UDPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461AE1EF50DA100E89CD6 /* UDPClient.cpp */; };
-		8E0461B41EF50DB400E89CD6 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461B21EF50DB400E89CD6 /* Debug.cpp */; };
+		1679A023223046B100966D9B /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A01F223046B100966D9B /* Debug.cpp */; };
+		1679A024223046B100966D9B /* UDPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A020223046B100966D9B /* UDPClient.cpp */; };
+		1679A025223046B100966D9B /* client_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A022223046B100966D9B /* client_main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1679A01E223046B100966D9B /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
+		1679A01F223046B100966D9B /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
+		1679A020223046B100966D9B /* UDPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UDPClient.cpp; path = ../../UDPClient.cpp; sourceTree = "<group>"; };
+		1679A021223046B100966D9B /* UDPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UDPClient.hpp; path = ../../UDPClient.hpp; sourceTree = "<group>"; };
+		1679A022223046B100966D9B /* client_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = client_main.cpp; path = ../../client_main.cpp; sourceTree = "<group>"; };
 		8E0461A31EF50D8E00E89CD6 /* Mac UDP Client Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mac UDP Client Sample"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0461AD1EF50DA100E89CD6 /* client_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = client_main.cpp; path = ../../client_main.cpp; sourceTree = "<group>"; };
-		8E0461AE1EF50DA100E89CD6 /* UDPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UDPClient.cpp; path = ../../UDPClient.cpp; sourceTree = "<group>"; };
-		8E0461AF1EF50DA100E89CD6 /* UDPClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UDPClient.hpp; path = ../../UDPClient.hpp; sourceTree = "<group>"; };
-		8E0461B21EF50DB400E89CD6 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
-		8E0461B31EF50DB400E89CD6 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,10 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1679A01D2230469300966D9B /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1679A022223046B100966D9B /* client_main.cpp */,
+				1679A01F223046B100966D9B /* Debug.cpp */,
+				1679A01E223046B100966D9B /* Debug.hpp */,
+				1679A020223046B100966D9B /* UDPClient.cpp */,
+				1679A021223046B100966D9B /* UDPClient.hpp */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		8E04619A1EF50D8E00E89CD6 = {
 			isa = PBXGroup;
 			children = (
-				8E0461A51EF50D8E00E89CD6 /* Mac UDP Client Sample */,
+				1679A01D2230469300966D9B /* class */,
 				8E0461A41EF50D8E00E89CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,18 +70,6 @@
 				8E0461A31EF50D8E00E89CD6 /* Mac UDP Client Sample */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8E0461A51EF50D8E00E89CD6 /* Mac UDP Client Sample */ = {
-			isa = PBXGroup;
-			children = (
-				8E0461AD1EF50DA100E89CD6 /* client_main.cpp */,
-				8E0461AF1EF50DA100E89CD6 /* UDPClient.hpp */,
-				8E0461AE1EF50DA100E89CD6 /* UDPClient.cpp */,
-				8E0461B31EF50DB400E89CD6 /* Debug.hpp */,
-				8E0461B21EF50DB400E89CD6 /* Debug.cpp */,
-			);
-			path = "Mac UDP Client Sample";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0461B11EF50DA100E89CD6 /* UDPClient.cpp in Sources */,
-				8E0461B01EF50DA100E89CD6 /* client_main.cpp in Sources */,
-				8E0461B41EF50DB400E89CD6 /* Debug.cpp in Sources */,
+				1679A024223046B100966D9B /* UDPClient.cpp in Sources */,
+				1679A023223046B100966D9B /* Debug.cpp in Sources */,
+				1679A025223046B100966D9B /* client_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +263,7 @@
 				8E0461AC1EF50D8E00E89CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

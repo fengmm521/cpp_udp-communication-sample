@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0461971EF508E100E89CD6 /* UDPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461951EF508E100E89CD6 /* UDPServer.cpp */; };
-		8E0461991EF50A4900E89CD6 /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461981EF50A4900E89CD6 /* server_main.cpp */; };
-		8E0461B71EF50DD200E89CD6 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E0461B51EF50DD200E89CD6 /* Debug.cpp */; };
-		8E491B881EF532AE00B04212 /* ipaddress_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E491B861EF532AE00B04212 /* ipaddress_list.cpp */; };
+		1679A0192230466400966D9B /* server_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A0142230466300966D9B /* server_main.cpp */; };
+		1679A01A2230466400966D9B /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A0152230466300966D9B /* Debug.cpp */; };
+		1679A01B2230466400966D9B /* UDPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A0162230466400966D9B /* UDPServer.cpp */; };
+		1679A01C2230466400966D9B /* ipaddress_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1679A0172230466400966D9B /* ipaddress_list.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1679A0122230466300966D9B /* ipaddress_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ipaddress_list.hpp; path = ../../ipaddress_list.hpp; sourceTree = "<group>"; };
+		1679A0132230466300966D9B /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
+		1679A0142230466300966D9B /* server_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = server_main.cpp; path = ../../server_main.cpp; sourceTree = "<group>"; };
+		1679A0152230466300966D9B /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
+		1679A0162230466400966D9B /* UDPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UDPServer.cpp; path = ../../UDPServer.cpp; sourceTree = "<group>"; };
+		1679A0172230466400966D9B /* ipaddress_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ipaddress_list.cpp; path = ../../ipaddress_list.cpp; sourceTree = "<group>"; };
+		1679A0182230466400966D9B /* UDPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UDPServer.hpp; path = ../../UDPServer.hpp; sourceTree = "<group>"; };
 		8E04618B1EF508D000E89CD6 /* Mac UDP Server Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mac UDP Server Sample"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0461951EF508E100E89CD6 /* UDPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UDPServer.cpp; path = ../../UDPServer.cpp; sourceTree = "<group>"; };
-		8E0461961EF508E100E89CD6 /* UDPServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UDPServer.hpp; path = ../../UDPServer.hpp; sourceTree = "<group>"; };
-		8E0461981EF50A4900E89CD6 /* server_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = server_main.cpp; path = ../../server_main.cpp; sourceTree = "<group>"; };
-		8E0461B51EF50DD200E89CD6 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../../Debug.cpp; sourceTree = "<group>"; };
-		8E0461B61EF50DD200E89CD6 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Debug.hpp; path = ../../Debug.hpp; sourceTree = "<group>"; };
-		8E491B861EF532AE00B04212 /* ipaddress_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ipaddress_list.cpp; path = ../../ipaddress_list.cpp; sourceTree = "<group>"; };
-		8E491B871EF532AE00B04212 /* ipaddress_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ipaddress_list.hpp; path = ../../ipaddress_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1679A0112230463100966D9B /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1679A0152230466300966D9B /* Debug.cpp */,
+				1679A0132230466300966D9B /* Debug.hpp */,
+				1679A0172230466400966D9B /* ipaddress_list.cpp */,
+				1679A0122230466300966D9B /* ipaddress_list.hpp */,
+				1679A0142230466300966D9B /* server_main.cpp */,
+				1679A0162230466400966D9B /* UDPServer.cpp */,
+				1679A0182230466400966D9B /* UDPServer.hpp */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		8E0461821EF508D000E89CD6 = {
 			isa = PBXGroup;
 			children = (
-				8E04618D1EF508D000E89CD6 /* Mac UDP Server Sample */,
+				1679A0112230463100966D9B /* class */,
 				8E04618C1EF508D000E89CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,20 +75,6 @@
 				8E04618B1EF508D000E89CD6 /* Mac UDP Server Sample */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8E04618D1EF508D000E89CD6 /* Mac UDP Server Sample */ = {
-			isa = PBXGroup;
-			children = (
-				8E0461981EF50A4900E89CD6 /* server_main.cpp */,
-				8E0461961EF508E100E89CD6 /* UDPServer.hpp */,
-				8E0461951EF508E100E89CD6 /* UDPServer.cpp */,
-				8E491B871EF532AE00B04212 /* ipaddress_list.hpp */,
-				8E491B861EF532AE00B04212 /* ipaddress_list.cpp */,
-				8E0461B61EF50DD200E89CD6 /* Debug.hpp */,
-				8E0461B51EF50DD200E89CD6 /* Debug.cpp */,
-			);
-			path = "Mac UDP Server Sample";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +108,7 @@
 				TargetAttributes = {
 					8E04618A1EF508D000E89CD6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XF9AB35UYQ;
+						DevelopmentTeam = VHWE67BKKW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,10 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0461971EF508E100E89CD6 /* UDPServer.cpp in Sources */,
-				8E491B881EF532AE00B04212 /* ipaddress_list.cpp in Sources */,
-				8E0461991EF50A4900E89CD6 /* server_main.cpp in Sources */,
-				8E0461B71EF50DD200E89CD6 /* Debug.cpp in Sources */,
+				1679A01B2230466400966D9B /* UDPServer.cpp in Sources */,
+				1679A0192230466400966D9B /* server_main.cpp in Sources */,
+				1679A01C2230466400966D9B /* ipaddress_list.cpp in Sources */,
+				1679A01A2230466400966D9B /* Debug.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +237,7 @@
 		8E0461931EF508D000E89CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = XF9AB35UYQ;
+				DEVELOPMENT_TEAM = VHWE67BKKW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -245,7 +245,7 @@
 		8E0461941EF508D000E89CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = XF9AB35UYQ;
+				DEVELOPMENT_TEAM = VHWE67BKKW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
